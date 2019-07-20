@@ -17,7 +17,11 @@ function createRestaurant(restaurant) {
     var data = {
         name: restaurant
     }
-    return firebase.database().ref().child('restaurants').push(data);
+    return firebase.database().ref().child('restaurants').push(data).then(function(){
+        window.location.replace('/restaurants.html');
+    }).catch(function (error){
+        alert("Houve um problema ao criar o restaurante. " + error);
+    });
 }
 
 function listRestaurants() {

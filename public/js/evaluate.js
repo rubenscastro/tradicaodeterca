@@ -75,5 +75,9 @@ function sendEvaluation(tradition, atendimento, comida, tempo, custo, limonada) 
         userAverage: (atendimento + comida + tempo + custo + limonada)/5
     }
     
-    return firebase.database().ref('traditions').child(tradition).child('evaluations').push(data);
+    return firebase.database().ref('traditions').child(tradition).child('evaluations').push(data).then(function(){
+        window.location.replace('/vote.html');
+    }).catch(function (error){
+        alert("Houve um problema ao fazer a avaliação. " + error);
+    });;
 }

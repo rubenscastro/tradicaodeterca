@@ -17,7 +17,11 @@ function createTradition(date, restaurant, pick) {
         user: pick,
         evaluations: ['']
     }
-    return firebase.database().ref().child('traditions').push(data);
+    return firebase.database().ref().child('traditions').push(data).then(function(){
+        window.location.replace('/vote.html');
+    }).catch(function (error){
+        alert("Houve um problema ao criar a tradição. " + error);
+    });;
 }
 
 function listUsers() {
