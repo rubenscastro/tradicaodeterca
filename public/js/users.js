@@ -29,6 +29,8 @@ function listUsers() {
     query.once("value")
     .then(function(snapshot) {
         snapshot.forEach(renderSingleSnapshot);
+        $(".loader").css("display", "none");
+        $(".conteudo").css("display", "flex");
     });
 
     var renderSingleSnapshot = function(singleSnapshot){

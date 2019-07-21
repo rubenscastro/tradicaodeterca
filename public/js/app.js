@@ -31,8 +31,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     var name = user.displayName;
     var email = user.email;
     window.user = user;
-    console.log(name + " esté logado");
-    $("#nome").text(name);
+    $("#nome").text("Bem-vindo, " + name);
     if(sPage == 'auth.html') {
         window.location.replace("/index.html");
     }

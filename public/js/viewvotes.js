@@ -40,11 +40,8 @@ function listTraditionVotes(tradition) {
 
         }
 
-        // var evaluationsCount = evaluationsArr.length - 1;
-        // var evaluationAverage = evaluationsSum / evaluationsCount;
-        // var finalEvaluation = Math.round(evaluationAverage * 100) / 100
-
-        // $("#restaurantAverage").append(finalEvaluation);
+        $(".loader").css("display", "none");
+        $(".conteudo").css("display", "flex");
 
     });
 

@@ -10,15 +10,19 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <pre>Tradição de Terça</pre>
-    <h1>Restaurantes</h1>
-    <a href="createRestaurant.html" class="btn btn-md btn-success">Adicionar Restaurante</a>
+    <div class="loader"></div>
 
-    <div class="col-md-4">
-        <ul id="restaurantsList"></ul>
+    <div class="conteudo">
+        <pre>Tradição de Terça</pre>
+        <h1>Restaurantes</h1>
+        <a href="createRestaurant.html" class="btn btn-md btn-success">Adicionar Restaurante</a>
+
+        <div class="col-md-4">
+            <ul id="restaurantsList"></ul>
+        </div>
+
+        <a href="index.html" class="btn btn-md btn-primary" style="margin-bottom: 20px">Voltar</a>
     </div>
-
-    <a href="index.html" class="btn btn-md btn-primary" style="margin-bottom: 20px">Voltar</a>
 
     <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>

@@ -11,21 +11,26 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="col-md-5 col-sm-12">
-        <h1>Tradição de Terça</h1>
-        <h6>Bem-vindo, <span id="nome"></span></h6>
 
-        <ul style="width: 100%">
-            <li><a class="btn btn-md btn-success" href="vote.html">Avaliar</a></li>
-            <li><a class="btn btn-md btn-info" href="createTradition.html">Criar Tradição</a></li>
-            <li><a class="btn btn-md btn-primary" href="ranking.html">Ranking</a></li>
-            <li><a class="btn btn-md btn-primary" href="restaurants.html">Restaurantes</a></li>
-            <li><a class="btn btn-md btn-primary" href="usersList.html">Membros</a></li>
-        </ul>
+    <!-- <div class="loader"></div> -->
 
+    <div class="conteudo" style="display: flex">
+        <div class="col-md-5 col-sm-12">
+            <h1>Tradição de Terça</h1>
+            <h6><span id="nome"></span></h6>
+
+            <ul style="width: 100%">
+                <li><a class="btn btn-md btn-success" href="vote.html">Avaliar</a></li>
+                <li><a class="btn btn-md btn-info" href="createTradition.html">Criar Tradição</a></li>
+                <li><a class="btn btn-md btn-primary" href="ranking.html">Ranking</a></li>
+                <li><a class="btn btn-md btn-primary" href="restaurants.html">Restaurantes</a></li>
+                <li><a class="btn btn-md btn-primary" href="usersList.html">Membros</a></li>
+            </ul>
+
+        </div>
+        
+        <button class="btn btn-md btn-danger" id="logout">Sair</button>
     </div>
-    
-    <button class="btn btn-md btn-danger" id="logout">Sair</button>
 
     <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.1.1/firebase-auth.js"></script>

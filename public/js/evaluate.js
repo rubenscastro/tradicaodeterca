@@ -11,6 +11,8 @@ function listTradition(tradition) {
     query.once("value")
     .then(function(snapshot) {
         renderSingleSnapshot(snapshot.val());
+        $(".loader").css("display", "none");
+        $(".conteudo").css("display", "flex");
     });
 
     var renderSingleSnapshot = function(singleSnapshot){

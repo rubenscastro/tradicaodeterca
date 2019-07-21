@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <meta name="theme-color" content="#272B30">
+    <meta name="theme-color" content="#272B30">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -11,81 +11,87 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <pre>Tradição de Terça</pre>
-    <h1 id="evaluate">Avaliar</h1>
-    <pre id="pick"></pre>
 
-    <div class="col-md-2 evaluate">
+    <div class="loader"></div>
 
-        <form>
-
-        <div class="evaluate-item">
+    <div class="conteudo">
     
-            <div class="label">Atendimento:</div>
-            <div class="input">
-                <div class="slider">
-                    <div class="ui-slider-handle"></div>
-                </div>
-                <input type="hidden" class="form-control" value="0" id="eAtendimento">
-            </div>
+        <pre>Tradição de Terça</pre>
+        <h1 id="evaluate">Avaliar</h1>
+        <pre id="pick"></pre>
 
-        </div>
+        <div class="col-md-2 evaluate">
 
-        <div class="evaluate-item">
-    
-            <div class="label">Comida:</div>
-            <div class="input">
-                <div class="slider">
-                    <div class="ui-slider-handle"></div>
-                </div>
-                <input type="hidden" class="form-control" value="0" id="eComida">
-            </div>
+            <form>
 
-        </div>
-
-        <div class="evaluate-item">
-    
-            <div class="label">Tempo:</div>
-            <div class="input">
-                <div class="slider">
-                    <div class="ui-slider-handle"></div>
-                </div>
-                <input type="hidden" class="form-control" value="0" id="eTempo">
-            </div>
-
-        </div>
-
-        <div class="evaluate-item">
-    
-            <div class="label">Custo/Benefício:</div>
-            <div class="input">
-                <div class="slider">
-                    <div class="ui-slider-handle"></div>
-                </div>
-                <input type="hidden" class="form-control" value="0" id="eCusto">
-            </div>
-
-        </div>
-
-        <div class="evaluate-item">
-    
-            <div class="label">Limonada Suíça:</div>
-            <div class="input">
-                <div class="slider">
-                    <div class="ui-slider-handle"></div>
-                </div>
-                <input type="hidden" class="form-control" value="0" id="eLimonada">
-            </div>
-
-        </div>
-
-        <button class="btn btn-lg btn-block btn-success" id="sendEvaluation">Enviar Avaliação</button><br>
-
-        </form>
+            <div class="evaluate-item">
         
-    </div>
+                <div class="label">Atendimento:</div>
+                <div class="input">
+                    <div class="slider">
+                        <div class="ui-slider-handle"></div>
+                    </div>
+                    <input type="hidden" class="form-control" value="0" id="eAtendimento">
+                </div>
 
-    <a href="vote.html" class="btn btn-md btn-primary" style="margin-bottom: 20px">Voltar</a>
+            </div>
+
+            <div class="evaluate-item">
+        
+                <div class="label">Comida:</div>
+                <div class="input">
+                    <div class="slider">
+                        <div class="ui-slider-handle"></div>
+                    </div>
+                    <input type="hidden" class="form-control" value="0" id="eComida">
+                </div>
+
+            </div>
+
+            <div class="evaluate-item">
+        
+                <div class="label">Tempo:</div>
+                <div class="input">
+                    <div class="slider">
+                        <div class="ui-slider-handle"></div>
+                    </div>
+                    <input type="hidden" class="form-control" value="0" id="eTempo">
+                </div>
+
+            </div>
+
+            <div class="evaluate-item">
+        
+                <div class="label">Custo/Benefício:</div>
+                <div class="input">
+                    <div class="slider">
+                        <div class="ui-slider-handle"></div>
+                    </div>
+                    <input type="hidden" class="form-control" value="0" id="eCusto">
+                </div>
+
+            </div>
+
+            <div class="evaluate-item">
+        
+                <div class="label">Limonada Suíça:</div>
+                <div class="input">
+                    <div class="slider">
+                        <div class="ui-slider-handle"></div>
+                    </div>
+                    <input type="hidden" class="form-control" value="0" id="eLimonada">
+                </div>
+
+            </div>
+
+            <button class="btn btn-lg btn-block btn-success" id="sendEvaluation">Enviar Avaliação</button><br>
+
+            </form>
+            
+        </div>
+
+        <a href="vote.html" class="btn btn-md btn-primary" style="margin-bottom: 20px">Voltar</a>
+    </div>
 
     <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>

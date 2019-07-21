@@ -10,6 +10,8 @@ function listTraditions() {
     .then(function(snapshot) {
     
         snapshot.forEach(renderSingleSnapshot);
+        $(".loader").css("display", "none");
+        $(".conteudo").css("display", "flex");
 
         var k;
         for (k = 0; k < traditionsArr.length; ++k) {
@@ -40,6 +42,8 @@ function listTraditions() {
             }
 
         }
+
+
     });
 
     var traditionsArr;

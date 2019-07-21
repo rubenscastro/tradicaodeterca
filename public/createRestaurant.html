@@ -10,21 +10,24 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <pre>Tradição de Terça</pre>
-    <h1>Adicionar Restaurante</h1>
 
-    <div class="col-md-4">
-        <form>
-            <div class="form-group">
-                <label for="usernameInput">Nome:</label>
-                <input type="text" class="form-control" id="restaurantName">
-            </div>
-            <br>
-            <button class="btn btn-lg btn-block btn-success" id="addButton">Adicionar</button>
-            <br>
-        </form>
+    <div class="conteudo" style="display: flex">
+        <pre>Tradição de Terça</pre>
+        <h1>Adicionar Restaurante</h1>
+
+        <div class="col-md-4">
+            <form>
+                <div class="form-group">
+                    <label for="usernameInput">Nome:</label>
+                    <input type="text" class="form-control" id="restaurantName">
+                </div>
+                <br>
+                <button class="btn btn-lg btn-block btn-success" id="addButton">Adicionar</button>
+                <br>
+            </form>
+        </div>
+        <a href="restaurants.html" class="btn btn-md btn-primary" style="margin-bottom: 20px">Voltar</a>
     </div>
-    <a href="restaurants.html" class="btn btn-md btn-primary" style="margin-bottom: 20px">Voltar</a>
 
     <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>

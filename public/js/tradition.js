@@ -31,6 +31,8 @@ function listUsers() {
     .then(function(snapshot) {
         snapshot.forEach(renderSingleSnapshot);
         $("#tPick").append('<option value="Tradição">Tradição - Escolha Extraordinária</option>');
+        $(".loader").css("display", "none");
+        $(".conteudo").css("display", "flex");
     });
 
     var renderSingleSnapshot = function(singleSnapshot){
@@ -43,6 +45,8 @@ function listRestaurants() {
     query.once("value")
     .then(function(snapshot) {
         snapshot.forEach(renderSingleSnapshot);
+        $(".loader").css("display", "none");
+        $(".conteudo").css("display", "flex");
     });
 
     var renderSingleSnapshot = function(singleSnapshot){

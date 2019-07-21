@@ -5,7 +5,6 @@ function listRanking() {
     query.once("value")
     .then(function(snapshot) {
 
-
         var traditions = snapshot.val();
         var traditionsArr = Object.keys(traditions).map(function(key) {
             return [(key), traditions[key]];
@@ -24,8 +23,6 @@ function listRanking() {
         var i;
         for (i = 0; i < traditionsArr.length; ++i) {
 
-            console.log(traditionsArr[i]);
-
             var tRestaurant = traditionsArr[i][1].restaurant;
             var tRank = traditionsArr[i][1].rank;
             var tPick = traditionsArr[i][1].user;
@@ -38,6 +35,9 @@ function listRanking() {
             $("#traditionRanking").append(rankItem);
 
         }
+
+        $(".loader").css("display", "none");
+        $(".conteudo").css("display", "flex");
 
     });
 
