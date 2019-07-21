@@ -15,7 +15,8 @@ function createTradition(date, restaurant, pick) {
         date: date,
         restaurant: restaurant,
         user: pick,
-        evaluations: ['']
+        evaluations: [''],
+        rank: 0
     }
     return firebase.database().ref().child('traditions').push(data).then(function(){
         window.location.replace('/vote.html');
@@ -29,10 +30,10 @@ function listUsers() {
     query.once("value")
     .then(function(snapshot) {
         snapshot.forEach(renderSingleSnapshot);
+        $("#tPick").append('<option value="Tradição">Tradição - Escolha Extraordinária</option>');
     });
 
     var renderSingleSnapshot = function(singleSnapshot){
-        console.log(singleSnapshot.val());
         $("#tPick").append('<option value="' + singleSnapshot.val().name + '">' + singleSnapshot.val().name + '</option>');
     }
 }
@@ -45,7 +46,6 @@ function listRestaurants() {
     });
 
     var renderSingleSnapshot = function(singleSnapshot){
-        console.log(singleSnapshot.val());
         $("#tRestaurant").append('<option value="' + singleSnapshot.val().name + '">' + singleSnapshot.val().name + '</option>');
     }
 }

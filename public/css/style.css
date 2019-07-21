@@ -13,11 +13,20 @@ body {
     display: none;
 }
 
+.ui-slider-handle {
+    width: 3em !important;
+    height: 1.6em !important;
+    top: 50% !important;
+    margin-top: -.8em !important;
+    text-align: center !important;
+    line-height: 1.6em !important;
+}
+
 ul {
     padding: 0;
     margin: 0;
     list-style: none;
-    width: 30%;
+    //width: 30%;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -84,28 +93,90 @@ li {
 .evaluate-item {
     display: block;
     width: 100%;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     margin-bottom: 20px;
 }
 
 .evaluate .label {
-    width: 50%;
-    float: left;
-    text-align: right;
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    padding-right: 10px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #FFF;
 }
 
 .evaluate .input {
-    width: 50%;
-    float: left;
-    text-align: left;
+    width: 100%;
+    padding: 0 30px;
 }
 
 .input input {
     width: 70px;
     font-size: 25px;
+}
+
+#usersEvaluations {
+    width: auto;
+    display: block;
+}
+
+#usersEvaluations li .user,
+#usersEvaluations li .average {
+    font-size: 20px;
+    color: #FFF;
+}
+
+#usersEvaluations li .user {
+    text-align: left;
+    float: left;
+    width: 60%;
+}
+
+#usersEvaluations li .average {
+    text-align: right;
+    float: left;
+    width: 40%;
+}
+
+#usersEvaluations li .average .small {
+    display: inline;
+}
+
+#restaurantAverage {
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    color: #FFF;
+}
+
+#traditionRanking {
+    width: auto;
+    display: block;
+}
+
+#traditionRanking li .user,
+#traditionRanking li .average {
+    font-size: 20px;
+    color: #FFF;
+}
+
+#traditionRanking li .user {
+    text-align: left;
+    float: left;
+    width: 60%;
+}
+
+#traditionRanking li .average {
+    text-align: right;
+    float: left;
+    width: 40%;
+}
+
+#traditionRanking li .average .small {
+    display: inline;
+}
+
+#restaurantsList {
+    width: 90%;
 }

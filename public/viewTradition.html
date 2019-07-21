@@ -10,29 +10,15 @@
 </head>
 <body>
     <pre>Tradição de Terça</pre>
-    <h1>Criar Tradição</h1>
+    <h1 id="restaurant"></h1>
+    <pre id="meta"></pre>
 
-    <div class="col-md-4">
-        <form>
-            <div class="form-group">
-                <label for="tDate">Data:</label>
-                <input type="date" class="form-control" id="tDate">
-            </div>
-            <div class="form-group">
-                <label for="tRestaurant">Restaurante:</label><br>
-                <select name="tRestaurant" id="tRestaurant">
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="tPick">Escolha:</label><br>
-                <select name="tPick" id="tPick"></select>
-            </div>
-            <br>
-            <button class="btn btn-lg btn-block btn-success" id="addButton">Criar</button>
-            <br>
-        </form>
+    <div class="col-md-5">
+        <div id="restaurantAverage"></div>
+        <ul id="usersEvaluations"></ul>
     </div>
-    <a href="index.html" class="btn btn-md btn-primary" style="margin-bottom: 20px">Voltar</a>
+    
+    <a href="vote.html" class="btn btn-md btn-primary" style="margin-bottom: 20px">Voltar</a>
 
     <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
@@ -43,7 +29,7 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
-    <script src="js/tradition.js"></script>
+    <script src="js/viewvotes.js"></script>
 
 </body>
 </html>
