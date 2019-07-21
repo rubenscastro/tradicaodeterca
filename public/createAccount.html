@@ -11,33 +11,36 @@
 </head>
 
 <body>
-    <pre>Tradição de Terça</pre>
-    <h1>Criar Conta</h1>
-    <br><br>
+    
+    <div class="conteudo" style="display: flex">
+        <pre>Tradição de Terça</pre>
+        <h1>Criar Conta</h1>
+        <br><br>
 
-    <div class="col-md-3">
+        <div class="col-md-3">
 
-        <form>
-            <div class="form-group">
-                <label for="nameInput">Nome:</label>
-                <input type="email" class="form-control" id="nameInput">
-            </div>
-            <div class="form-group">
-                    <label for="emailInput">Email:</label>
-                    <input type="email" class="form-control" id="emailInput">
+            <form>
+                <div class="form-group">
+                    <label for="nameInput">Nome:</label>
+                    <input type="email" class="form-control" id="nameInput">
                 </div>
-            <div class="form-group">
-                <label for="passwordInput">Senha:</label>
-                <input type="password" class="form-control" id="passwordInput">
-            </div>
-            <br>
-            <button class="btn btn-lg btn-block btn-success" id="createAccount">Criar Conta</button>
-            <br>
-        </form>
+                <div class="form-group">
+                        <label for="emailInput">Email:</label>
+                        <input type="email" class="form-control" id="emailInput">
+                    </div>
+                <div class="form-group">
+                    <label for="passwordInput">Senha:</label>
+                    <input type="password" class="form-control" id="passwordInput">
+                </div>
+                <br>
+                <button class="btn btn-lg btn-block btn-success" id="createAccount">Criar Conta</button>
+                <br>
+            </form>
 
+        </div>
+
+        <a href="auth.html" class="btn btn-md btn-primary" style="margin-bottom: 20px">Voltar</a>
     </div>
-
-    <a href="auth.html" class="btn btn-md btn-primary" style="margin-bottom: 20px">Voltar</a>
 
     <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>

@@ -12,7 +12,7 @@ function createAccount(email, name, password) {
         .auth()
         .createUserWithEmailAndPassword(email, password)
         .then(function () {
-            alert("Conta criada com sucesso!");
+            //alert("Conta criada com sucesso!");
             var user = firebase.auth().currentUser;
             user.updateProfile({
                 displayName: name
