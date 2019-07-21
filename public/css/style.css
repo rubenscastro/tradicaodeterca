@@ -203,3 +203,22 @@ li {
 #sendEvaluation {
     margin-top: 50px;
 }
+
+#grazimeuamor {
+    width: 60px;
+    height: 60px;
+}
+
+.mozao {
+    position: absolute;
+    bottom: -600px;
+    left: 50%;
+    margin-left: -226px;
+    display: none;
+}
+
+.mozao.show {
+    bottom: 1200px;
+    transition: bottom 2s ease-in;
+    display: block;
+}

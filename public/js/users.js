@@ -48,3 +48,14 @@ firebase.database().ref('users').on('value', function(snapshot) {
         });
     }
 });
+
+var button = document.getElementById("grazimeuamor"),
+  count = 0;
+button.onclick = function() {
+  count += 1;
+  console.log(count);
+  if(count >= 10) {
+    $(".mozao").addClass("show");
+    count = 0;
+  }
+};
