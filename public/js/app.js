@@ -31,7 +31,6 @@ firebase.auth().onAuthStateChanged(function(user) {
     var name = user.displayName;
     var email = user.email;
     window.user = user;
-    $("#nome").text("Bem-vindo, " + name);
     if(sPage == 'auth.html') {
         window.location.replace("/index.html");
     }
@@ -41,9 +40,6 @@ firebase.auth().onAuthStateChanged(function(user) {
     }
   }
 });
-
-
-
 
 if(sPage != 'auth.html') {
     if (!window.user) {
