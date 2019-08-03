@@ -79,10 +79,15 @@ function updateQueue(tPick){
                 currentPosition: newPosition
             }
 
+            firebase.database().ref('queue').child('currentPosition').update(data).then(function(){
+                window.location.replace('/vote.html');
+            }).catch(error) {
+                alert("Problema ao atualizar a fila de escolha");
+            };
+
+        } else {
+            window.location.replace('/vote.html');
         }
 
-        firebase.database().ref('queue').child('currentPosition').update(data).then(function(){
-            window.location.replace('/vote.html');
-        });
     });
 }

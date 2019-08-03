@@ -25,11 +25,12 @@ function listRanking() {
 
             var tRestaurant = traditionsArr[i][1].restaurant;
             var tRank = traditionsArr[i][1].rank;
+            var tRank2 = tRank.toFixed(2);
             var tPick = traditionsArr[i][1].user;
             var tDate = traditionsArr[i][1].date;
 
             var rankItem = "<li><div class='user'>" + tRestaurant + "</div>" +
-                           "<div class='average'><span class='small'>média </span>" + tRank + "</div>" +
+                           "<div class='average'><span class='small'>média </span>" + tRank2 + "</div>" +
                            "</li>";
 
             $("#traditionRanking").append(rankItem);

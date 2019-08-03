@@ -41,11 +41,6 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 
-if(sPage != 'auth.html') {
-    if (!window.user) {
-        //window.location.replace('/auth.html');
-    }
-}
 
 $("#logout").click(function(){
     firebase.auth().signOut()

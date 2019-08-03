@@ -1,58 +1,29 @@
-[debug] [2019-07-21T16:34:34.274Z] ----------------------------------------------------------------------
-[debug] [2019-07-21T16:34:34.275Z] Command:       /Users/rubenscastro/.nvm/versions/node/v10.16.0/bin/node /Users/rubenscastro/.nvm/versions/node/v10.16.0/bin/firebase serve
-[debug] [2019-07-21T16:34:34.275Z] CLI Version:   7.1.0
-[debug] [2019-07-21T16:34:34.275Z] Platform:      darwin
-[debug] [2019-07-21T16:34:34.275Z] Node Version:  v10.16.0
-[debug] [2019-07-21T16:34:34.282Z] Time:          Sun Jul 21 2019 13:34:34 GMT-0300 (Brasilia Standard Time)
-[debug] [2019-07-21T16:34:34.282Z] ----------------------------------------------------------------------
+[debug] [2019-08-03T21:15:59.707Z] ----------------------------------------------------------------------
+[debug] [2019-08-03T21:15:59.708Z] Command:       /Users/rubenscastro/.nvm/versions/node/v10.16.0/bin/node /Users/rubenscastro/.nvm/versions/node/v10.16.0/bin/firebase serve
+[debug] [2019-08-03T21:15:59.708Z] CLI Version:   7.1.0
+[debug] [2019-08-03T21:15:59.708Z] Platform:      darwin
+[debug] [2019-08-03T21:15:59.708Z] Node Version:  v10.16.0
+[debug] [2019-08-03T21:15:59.717Z] Time:          Sat Aug 03 2019 18:15:59 GMT-0300 (Brasilia Standard Time)
+[debug] [2019-08-03T21:15:59.717Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2019-07-21T16:34:34.291Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-07-21T16:34:34.291Z] > authorizing via signed-in user
-[debug] [2019-07-21T16:34:34.291Z] [iam] checking project tradicaodeterca for permissions ["firebase.projects.get"]
-[debug] [2019-07-21T16:34:34.292Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2019-07-21T16:34:34.293Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2019-08-03T21:15:59.727Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-08-03T21:15:59.727Z] > authorizing via signed-in user
+[debug] [2019-08-03T21:15:59.727Z] [iam] checking project tradicaodeterca for permissions ["firebase.projects.get"]
+[debug] [2019-08-03T21:15:59.728Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-08-03T21:15:59.728Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2019-07-21T16:34:34.518Z] <<< HTTP RESPONSE 200
-[debug] [2019-07-21T16:34:34.522Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/tradicaodeterca:testIamPermissions  
+[debug] [2019-08-03T21:15:59.965Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-03T21:15:59.972Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/tradicaodeterca:testIamPermissions  
 
-[debug] [2019-07-21T16:34:35.564Z] <<< HTTP RESPONSE 200
-[debug] [2019-07-21T16:34:35.565Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/tradicaodeterca  
+[debug] [2019-08-03T21:16:01.027Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-03T21:16:01.029Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/tradicaodeterca  
  
-[debug] [2019-07-21T16:34:36.883Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-03T21:16:02.360Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/Users/rubenscastro/Sites/tradicao2'...
 [info] 
-[debug] [2019-07-21T16:34:36.885Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/tradicaodeterca/webApps/-/config  
+[debug] [2019-08-03T21:16:02.363Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/tradicaodeterca/webApps/-/config  
  
-[debug] [2019-07-21T16:34:38.185Z] <<< HTTP RESPONSE 200
-[info] i  hosting: Serving hosting files from: public
-[info] ✔  hosting: Local server: http://localhost:5000
-[debug] [2019-07-22T03:01:24.063Z] ----------------------------------------------------------------------
-[debug] [2019-07-22T03:01:24.065Z] Command:       /Users/rubenscastro/.nvm/versions/node/v10.16.0/bin/node /Users/rubenscastro/.nvm/versions/node/v10.16.0/bin/firebase serve
-[debug] [2019-07-22T03:01:24.065Z] CLI Version:   7.1.0
-[debug] [2019-07-22T03:01:24.065Z] Platform:      darwin
-[debug] [2019-07-22T03:01:24.065Z] Node Version:  v10.16.0
-[debug] [2019-07-22T03:01:24.072Z] Time:          Mon Jul 22 2019 00:01:24 GMT-0300 (Brasilia Standard Time)
-[debug] [2019-07-22T03:01:24.072Z] ----------------------------------------------------------------------
-[debug] 
-[debug] [2019-07-22T03:01:24.081Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-07-22T03:01:24.081Z] > authorizing via signed-in user
-[debug] [2019-07-22T03:01:24.081Z] [iam] checking project tradicaodeterca for permissions ["firebase.projects.get"]
-[debug] [2019-07-22T03:01:24.082Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2019-07-22T03:01:24.083Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2019-07-22T03:01:24.315Z] <<< HTTP RESPONSE 200
-[debug] [2019-07-22T03:01:24.320Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/tradicaodeterca:testIamPermissions  
-
-[debug] [2019-07-22T03:01:25.359Z] <<< HTTP RESPONSE 200
-[debug] [2019-07-22T03:01:25.361Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/tradicaodeterca  
- 
-[debug] [2019-07-22T03:01:26.654Z] <<< HTTP RESPONSE 200
-[info] 
-[info] === Serving from '/Users/rubenscastro/Sites/tradicao2'...
-[info] 
-[debug] [2019-07-22T03:01:26.655Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/tradicaodeterca/webApps/-/config  
- 
-[debug] [2019-07-22T03:01:28.032Z] <<< HTTP RESPONSE 200
+[debug] [2019-08-03T21:16:03.673Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
