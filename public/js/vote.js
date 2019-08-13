@@ -21,6 +21,26 @@ function listTraditions() {
             var restaurant = traditionsArr[k][1].restaurant;
             var date = formatDate(traditionsArr[k][1].date);
 
+            var absences = traditionsArr[k][1].absences;
+
+
+            if(absences) {
+                var absencesArr = Object.keys(absences).map(function(key) {
+                    return [(key), absences[key]];
+                });
+
+                var a;
+                for (a = 0; a < absencesArr.length; ++a) {
+                    var currentUser = window.user.displayName;
+                    var abscent = absencesArr[a][1].user;
+                    if(currentUser == abscent) {
+                        traditionsArr[k][1].hasEvaluated = true;
+                    }
+                    console.log(traditionsArr);
+                }
+
+            }
+
             if(traditionsArr[k][1].hasEvaluated) {
                 var traditionVoted = "<li class='tradition'> " +
                     "<div class='date'>" + date + "</div>" +

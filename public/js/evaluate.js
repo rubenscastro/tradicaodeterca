@@ -25,6 +25,31 @@ function listTradition(tradition) {
     }
 }
 
+$("#didntParticipate").click(function(e){
+    e.preventDefault();
+    didntParticipate();
+});
+
+function didntParticipate() {
+    var txt;
+    var r = confirm("Você tem certeza?");
+
+    var tTradition = tradition;
+    var userName = window.user.displayName;
+
+    var data = {
+        user: userName
+    }
+
+    if (r == true) {
+        firebase.database().ref('traditions').child(tradition).child('absences').push(data).then(function(){
+            window.location.replace('/viewTradition.html?tradition=' + tTradition);
+        }).catch(function (error){
+            alert("Houve um problema. " + error);
+        });;
+    }
+}
+
 $("#sendEvaluation").click(function(e){
 
     var tTradition = tradition;
