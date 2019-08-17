@@ -13,6 +13,8 @@ function listTraditions() {
         $(".loader").css("display", "none");
         $(".conteudo").css("display", "flex");
 
+        traditionsArr.reverse();
+
         var k;
         for (k = 0; k < traditionsArr.length; ++k) {
 
@@ -22,7 +24,6 @@ function listTraditions() {
             var date = formatDate(traditionsArr[k][1].date);
 
             var absences = traditionsArr[k][1].absences;
-
 
             if(absences) {
                 var absencesArr = Object.keys(absences).map(function(key) {
@@ -36,7 +37,6 @@ function listTraditions() {
                     if(currentUser == abscent) {
                         traditionsArr[k][1].hasEvaluated = true;
                     }
-                    console.log(traditionsArr);
                 }
 
             }

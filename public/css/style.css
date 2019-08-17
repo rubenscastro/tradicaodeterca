@@ -150,6 +150,7 @@ li {
     text-align: left;
     float: left;
     width: 60%;
+    margin-bottom: 10px;
 }
 
 #usersEvaluations li .average {
@@ -221,4 +222,38 @@ li {
     display: block;
     bottom: 1200px;
     transition: bottom 2s ease-in;
+}
+
+.viewMore {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 25px;
+    background: #CCC;
+    text-align: center;
+    line-height: 25px;
+    font-weight: bold;
+    color: #000;
+}
+
+.evaluationMore {
+    display: none;
+}
+
+.evaluationMoreHeader, .evaluationMoreContent {
+    display: flex;
+    clear: both;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.evaluationMoreHeader div,
+.evaluationMoreContent div {
+    float: left;
+    width: 20%;
+}
+
+.evaluationMoreContent {
+    color: #FFF;
+    margin-bottom: 10px;
 }
