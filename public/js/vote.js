@@ -81,7 +81,9 @@ function listTraditions() {
     var renderSingleSnapshot = function(singleSnapshot){
 
         var evaluations = singleSnapshot.val().evaluations;
-        var currentUser = window.user.displayName;
+        var currentUser = firebase.auth().currentUser.displayName;
+
+        console.log(currentUser);
 
         var evaluationsArr = Object.keys(evaluations).map(function(key) {
             return [(key), evaluations[key]];

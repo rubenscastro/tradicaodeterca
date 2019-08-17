@@ -11,13 +11,6 @@ var firebaseConfig = {
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
-// firebase.auth().onAuthStateChanged(function(user) {
-//     if (user) {
-//         //$(".batata").show();
-//     } else {
-//         //window.location.replace('/auth.html');
-//     }
-// });
 
 var sPath = window.location.pathname;
 var sPage = sPath.substring(sPath.lastIndexOf('/') + 1);
